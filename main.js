@@ -16,4 +16,4 @@ getProfileData = function(username) {
 });
 }
 
-print(getProfileData(4748))
+console.log(getProfileData(4748))
