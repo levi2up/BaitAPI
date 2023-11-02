@@ -16,4 +16,17 @@ getProfileData = function(username) {
 });
 }
 
-console.log(getProfileData(4748))
+getBazaarData = function(item) {
+  fetch('https://sky.shiiyu.moe/api/v2/bazaar', {
+    method: "GET"
+  })
+  .then(response => response.json)
+  .then(data => {
+    return data
+  })
+  .catch(error => {
+    return error
+  });
+}
+
+console.log(getBazaarData)
